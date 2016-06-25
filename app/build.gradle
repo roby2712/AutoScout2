@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "autoscout.it.autoscout2"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    //compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'com.viewpagerindicator:library:2.4.1@aar'
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile files('libs/volley-1.0.19.jar')
+    //compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //compile 'com.squareup.retrofit:retrofit:1.9.0'
+    //compile 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:1.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //compile 'com.facebook.android:facebook-android-sdk:4.5.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:design:23.1.1'
+    //compile 'com.google.android.gms:play-services:8.4.0'
+    //compile 'com.google.android.gms:play-services-ads:8.4.0'
+    //compile 'com.google.android.gms:play-services-identity:8.4.0'
+    //compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.github.aakira:expandable-layout:1.5.0-snapshot@aar'
+    compile 'com.android.support:multidex:1.0.0'
+    // Retrofit request library
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'io.reactivex:rxjava:1.1.3'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.github.antonyt:InfiniteViewPager:v1.0.0'
+}

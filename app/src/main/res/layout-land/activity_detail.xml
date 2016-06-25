@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutViewPager"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--
+                                <com.antonyt.infiniteviewpager.InfiniteViewPager
+                                    android:id="@+id/viewPager"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/white"
+                                    android:fitsSystemWindows="true"
+                                    app:layout_collapseMode="parallax" />
+                -->
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="?android:colorBackground" />
+
+                <com.viewpagerindicator.UnderlinePageIndicator
+                    android:id="@+id/underlinePageIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    app:selectedColor="@color/colorSelectedUnderlinePageIndicator" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/linearLayoutViewPager">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="60dp"
+                    android:scrollbars="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/textViewCarName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Porsche Boxster 3.2"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/colorGrayView" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_weight="1"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="@string/string_prezzo"
+                                    android:textColor="@android:color/black" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_weight="1"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="@string/string_potenza"
+                                    android:textColor="@android:color/black" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_weight="1"
+                                    android:text="€ 12000"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_weight="1"
+                                    android:text="120 CV"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="20sp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_weight="1"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="@string/string_chilometraggio"
+                                    android:textColor="@android:color/black" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_weight="1"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="@string/string_anno"
+                                    android:textColor="@android:color/black" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_weight="1"
+                                    android:text="120.233 km"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_weight="1"
+                                    android:text="04/1997"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="20sp" />
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/colorGrayView" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+                        <Button
+                            android:id="@+id/expandableButton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:fontFamily="sans-serif"
+                            android:gravity="left|center_vertical"
+                            android:onClick="expandableButton1"
+                            android:paddingRight="10dp"
+                            android:text="@string/string_dettagli"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="18sp" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton1"
+                            app:ael_duration="100"
+                            app:ael_expanded="true"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewExpandableRelativeLayoutDettagli"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorGrayView" />
+
+                        <Button
+                            android:id="@+id/expandableButton2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:fontFamily="sans-serif"
+                            android:gravity="left|center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="@string/string_equipaggiamento"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="18sp" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/expandableButton2"
+                            app:ael_duration="500"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="bounce"
+                            app:ael_orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewExpandableRelativeLayoutEquipaggiamento"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="sample2" />
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorGrayView" />
+
+                        <Button
+                            android:id="@+id/expandableButton3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:fontFamily="sans-serif"
+                            android:gravity="left|center_vertical"
+                            android:onClick="expandableButton3"
+                            android:paddingRight="10dp"
+                            android:text="@string/string_descrizione"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="18sp" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton3"
+                            app:ael_duration="100"
+                            app:ael_expanded="true"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewExpandableRelativeLayoutDescrizione"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorGrayView" />
+
+                        <Button
+                            android:id="@+id/buttonMappa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorAutoScout"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:text="@string/string_button_mappa"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/colorGrayView" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/string_informativa_consumi"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/buttonEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorProgressBar"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/string_button_email"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

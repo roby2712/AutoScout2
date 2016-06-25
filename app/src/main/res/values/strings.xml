@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AutoScout2</string>
+    <string name="red">red</string>
+    <string name="blue">blue</string>
+    <string name="orange">orange</string>
+    <string name="string_chilometraggio">Chilometraggio</string>
+    <string name="string_anno">Anno</string>
+    <string name="string_prezzo">Prezzo</string>
+    <string name="string_potenza">Potenza</string>
+    <string name="string_dettagli">Dettagli</string>
+    <string name="string_equipaggiamento">Equipaggiamento</string>
+    <string name="string_descrizione">Descrizione del veicolo</string>
+    <string name="string_button_mappa">Mappa</string>
+    <string name="string_button_email">e-mail</string>
+    <string name="string_informativa_consumi">* Ulteriori informazioni sul consumo dichiarato di carburante e sulle emissioni specifiche dichiarate di CO2 delle autovetture nuove sono reperibili nella guida sul consumo di carburante e sulle emissioni specifiche delle autovetture nuove, distribuita gratuitamente presso tutti i punti di vendita e scaricabile dal sito: www.sviluppoeconomico.gov.it</string>
+    <string name="string_email_nome">Il tuo nome</string>
+    <string name="string_email_email">La tua email</string>
+    <string name="string_email_telefono">Il tuo telefono</string>
+    <string name="string_email_dati_contatto">Dati di contatto</string>
+    <string name="string_email_messaggio">Messsaggio</string>
+    <string name="string_email_veicolo_disponibile">Il veicolo è ancora disponibile?</string>
+    <string name="string_email_prezzo_negoziabile">Il prezzo è negoziabile?</string>
+    <string name="string_email_permute_finanziamenti">Valutate permute? / Offrite finanziamenti?</string>
+    <string name="string_email_difetti_danni">Il veicolo ha difetti o danni che non sono stati menzionati nell\'annuncio?</string>
+    <string name="string_email_test_drive">Posso fissare un test drive?</string>
+    <string name="string_email_ricontattatemi">Per cortesia ricontattatemi, grazie.</string>
+    <string name="string_email_messaggio_email">Inserisci qui il tuo messaggio</string>
+    <string name="string_email_informativa">Ti informiamo che la tua e-mail potrà essere controllata da AutoScout24 per motivi di sicurezza. Cliccando su Invia ci autorizzi a svolgere tale attività nel rispetto della nostra Privacy Policy</string>
+    <string name="string_email_button_email">Invia una email</string>
+    <string name="string_email_error_nome">Manca il nome</string>
+    <string name="string_email_error_empty_email">Manca l\'email</string>
+    <string name="string_email_error_email">Inserisci una e-mail valida</string>
+    <string name="string_email_error_telefono">Inserisci numero valido</string>
+    <string name="string_action_bar_title_activity_mail">Contatta il venditore</string>
+    <!-- String for menu-->
+    <string name="string_action_send">Invia una email</string>
+    <string name="string_action_favorite">Preferiti</string>
+    <string name="string_action_share">Condividi</string>
+
+</resources>

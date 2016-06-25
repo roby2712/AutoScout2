@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorAutoScout</color>
+    <color name="colorPrimaryDark">#002E5D</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSelectedUnderlinePageIndicator">#FF7500</color>
+    <color name="colorProgressBar">#FF7500</color>
+    <color name="colorPhoto">#96252525</color>
+    <color name="colorAutoScout">#003468</color>
+    <color name="colorGrayView">#b7b7b7</color>
+    <color name="colorBlue">#3D648C</color>
+    <color name="windowBackground">#fff3f3f3</color>
+    <color name="colorBackground">#fff3f3f3</color>
+</resources>
